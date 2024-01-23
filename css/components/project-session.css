@@ -1,3 +1,8 @@
+.project-session__heading {
+  font-size: var(--h2);
+  margin-bottom: var(--space-m);
+}
+
 .project-card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

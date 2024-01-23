@@ -13,3 +13,15 @@
   filter: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(7348%)
     hue-rotate(287deg) brightness(109%) contrast(87%);
 }
+
+a {
+  transition: all 0.2s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+a:active {
+  opacity: 0.8;
+}

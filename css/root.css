@@ -40,7 +40,7 @@
 body {
   background: var(--primary-50);
   color: var(--primary-10);
-  font-size: var(--text-m);
+  font-size: var(--text-l);
   font-weight: 400;
   line-height: 1.5;
   font-family: "Exo 2", sans-serif;

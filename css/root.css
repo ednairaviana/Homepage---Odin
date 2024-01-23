@@ -26,6 +26,15 @@
   --space-m: clamp(1.5rem, calc(1.25rem + 1.25vw), 2.25rem);
   --space-l: clamp(2rem, calc(1.54rem + 2.29vw), 3.38rem);
   --space-xl: clamp(3rem, calc(2.5rem + 2.5vw), 4.5rem);
+
+  /* HEADING SIZE SCALE */
+  --h6: clamp(0.69rem, calc(0.84rem + -0.19vw), 0.8rem);
+  --h5: clamp(0.97rem, calc(1.01rem + -0.05vw), 1rem);
+  --h4: clamp(1.25rem, calc(1.21rem + 0.21vw), 1.38rem);
+  --h3: clamp(1.56rem, calc(1.44rem + 0.64vw), 1.94rem);
+  --h2: clamp(1.95rem, calc(1.69rem + 1.33vw), 2.75rem);
+  --h1: clamp(2.44rem, calc(1.96rem + 2.41vw), 3.89rem);
+  --h-title: clamp(3.05rem, calc(2.24rem + 4.08vw), 5.5rem);
 }
 
 body {
@@ -33,4 +42,6 @@ body {
   color: var(--primary-10);
   font-size: var(--text-m);
   font-weight: 400;
+  line-height: 1.5;
+  font-family: "Exo 2", sans-serif;
 }

@@ -6,3 +6,10 @@
   margin: 0 auto;
   max-width: 1400px;
 }
+
+.main-icon {
+  height: var(--h3);
+  width: var(--h3);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(0%) saturate(7348%)
+    hue-rotate(287deg) brightness(109%) contrast(87%);
+}

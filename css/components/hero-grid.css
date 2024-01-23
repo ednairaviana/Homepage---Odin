@@ -5,6 +5,7 @@
   background-color: var(--primary-70);
 
   border-radius: 50px 0 50px 0;
+  animation: appear 2s ease 1;
 }
 
 .hero-grid__1 {
@@ -14,6 +15,8 @@
 
   overflow: hidden;
   border-radius: 50px 0 50px 0;
+
+  animation: to-up 2s ease 1;
 }
 
 .hero-grid__heading-wrapper {
@@ -22,6 +25,8 @@
   left: var(--space-s);
   z-index: 2;
   font-size: var(--h2);
+
+  animation: to-left 2s ease 1;
 }
 
 .hero-grid__img-wrapper {
@@ -80,5 +85,36 @@
 @media (max-width: 600px) {
   .hero-grid {
     grid-template-rows: 1fr 2fr;
+  }
+}
+
+@keyframes to-up {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes to-left {
+  from {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -7,7 +7,7 @@
 
 .project-card {
   display: grid;
-  grid-template-rows: 1fr 1.5fr;
+  grid-template-rows: 1fr auto;
   background-color: var(--primary-70);
 
   border-radius: 30px 0 30px 0;
@@ -39,4 +39,18 @@
 .project-card a {
   margin-top: var(--space-xs);
   align-self: end;
+}
+
+@media (max-width: 950px) {
+  .project-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-card-wrapper {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
 }
